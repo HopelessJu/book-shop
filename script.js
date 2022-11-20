@@ -17,6 +17,7 @@ headerLogo.classList.add('header-logo');
 header.appendChild(headerWrapper);
 headerWrapper.appendChild(headerLogo);
 
+
 //main
 let mainWrapper = document.createElement('div');
 mainWrapper.classList.add('main-wrapper');
@@ -189,7 +190,6 @@ function library(books) {
     })
 };
 
-
 cartContainer.addEventListener('dragover', e => {
     e.preventDefault();
 });
@@ -237,10 +237,10 @@ function updateTotalAmount(addValue) {
 
 // BOOKS
 fetch('./books.json')
-        .then(response => {
-            return response.json();
-        })
-        .then(data => {
-            library(data);
-        });
+    .then(response => {
+        return response.json();
+    })
+    .then(data => {
+        library(data);
+    });
 
