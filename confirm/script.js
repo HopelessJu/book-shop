@@ -109,11 +109,7 @@ inputs.forEach(inp => {
   })
 //btn-disable end
 
-inputs.forEach(input => {
-  input.addEventListener ('keyup', (e) => {
-    e.target.value = e.target.value.trimLeft();
-  })
-})
+
 
 //POPUP
   completeOrder.addEventListener("click", () => {
@@ -136,3 +132,10 @@ closeOrderPopup.addEventListener("click", () => {
     form.reset();
 })
 
+  street.addEventListener ('keyup', (e) => {
+    e.target.value = e.target.value.trimLeft();
+  })
+
+  flat.addEventListener ('keyup', (e) => {
+    e.target.value = e.target.value.trimLeft();
+  })
