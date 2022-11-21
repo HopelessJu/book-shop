@@ -130,6 +130,7 @@ closeOrderPopup.addEventListener("click", () => {
     DeliveryPopup.style.display="none";
     body.classList.remove('hidden');
     form.reset();
+    completeOrder.disabled = true;
 })
 
   street.addEventListener ('keyup', (e) => {

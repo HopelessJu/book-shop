@@ -489,7 +489,7 @@ footer{
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 20px;
-    row-gap: 10px;
+    row-gap: 30px;
 }
 
 .house-flat-label {
@@ -535,7 +535,7 @@ footer{
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 40px;
-    row-gap: 10px;
+    row-gap: 30px;
 }
 
 .optional-bonus {
@@ -644,9 +644,30 @@ form input {
     outline: none;
 }
 
+.warning {
+    position: relative;
+}
+
 form input:invalid {
     border: 2px solid rgb(170, 89, 89);
     box-shadow:  0 0 9px 0px rgb(170, 89, 89);
+}
+
+form input:invalid+label::after {
+    position: absolute;
+    content: '⚠ The field is invalid!';
+    font-size: 13px;
+    font-weight: 600;
+    display: block;
+    width: 100%;
+    top: 105%;
+    left: 0%;
+    color: red;
+    border-radius: 5px;
+    height: 20px;
+    width: 140px;
+    text-align: center;
+    text-shadow: 0px 0px 10px red;
 }
 
 form input:valid {
