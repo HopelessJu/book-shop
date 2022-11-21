@@ -90,15 +90,13 @@ main {
     border-radius: 10px;
     /* box-shadow: 0px 0px 9px 1px rgb(57 62 70 / 53%); */
     padding: 20px;
+    padding-bottom: 70px;
 }
 
 .cart-header {
     width: 87%;
     margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+    display: block;
 }
 
 .total-amount-text, .total-amount-sum, .cart-name {
@@ -198,13 +196,10 @@ main {
 }
 
 .cart-footer {
-    display: flex;
+    display: block;
     width: 87%;
     height: 30px;
     margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     margin-top: 19px;
 }
 

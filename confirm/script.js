@@ -88,6 +88,7 @@ flatNumber.addEventListener('keyup', (e) => {
         e.target.value;
     }
 })
+
 //form validatioin end
 
 let completeOrder = document.querySelector('.complete-order');
