@@ -18,32 +18,32 @@
                 <h2 class="form-heading">Shipping details</h2>
                 <form class="form-name" name="user-form" id="form-name" action="#">
                     <div class="name-surname">
-                        <div class="ns-label">
-                            <input class="input-common input-ns" type="text" pattern=".{4,}" required placeholder="Name (4 characters min)" name="form-group" id="name">
+                        <div class="ns-label warning">
+                            <input class="input-common input-ns" type="text" pattern="[A-Za-z-А-Яа-я]{4,}"  required placeholder="Name (4 characters min)" name="form-group" id="name">
                             <label for="name"> Enter your Name</label>
                         </div>
-                        <div class="ns-label">
-                            <input class="input-common input-ns" type="text" pattern=".{5,}" required placeholder="Surname (5 characters min)" name="form-group" id="surname">
+                        <div class="ns-label warning" >
+                            <input class="input-common input-ns" type="text" pattern="[A-Za-z-А-Яа-я]{5,}" required placeholder="Surname (5 characters min)" name="form-group" id="surname">
                             <label for="surname">Enter your Surname</label>
                         </div>
-                        <div class="date-label">
+                        <div class="date-label warning">
                             <input class="input-common date" type="date" name="form-group" id="date" required>
                             <label for="date">Choose delivery date</label>
                         </div>
                     </div>
                     <div class="adress">
                         <p>Adress:</p>
-                        <div class="street-label">
-                            <input class="input-common" type="text" pattern=".{5,}" name="form-group" id="street" placeholder="Street" required>
+                        <div class="street-label warning">
+                            <input class="input-common" type="text" pattern="[1-9/A-Za-z-А-Яа-я/-]{5,}" name="form-group" id="street" placeholder="Street" required>
                             <label for="street">Street</label>
                         </div>
-                        <div class="house-flat-label">
+                        <div class="house-flat-label warning">
                             <div class="house-label">
-                                <input class="input-common" type="number" min="1" placeholder="House number" id="house" name="form-group" required>
+                                <input class="input-common" type="number" pattern="[1-9]" min="1" placeholder="House number" id="house" name="form-group" required>
                                 <label for="house">House number</label>
                             </div>
-                            <div class="flat-label">
-                                <input class="input-common" type="tel" min="1" name="form-group" pattern="[0-9\-]+" id="flat" placeholder="Flat number" required>
+                            <div class="flat-label warning">
+                                <input class="input-common" type="tel" min="1" name="form-group" pattern="[0-9/-]+" id="flat" placeholder="Flat number" required>
                                 <label for="flat">Flat number</label>
                             </div>
                         </div>

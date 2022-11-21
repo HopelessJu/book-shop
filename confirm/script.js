@@ -88,6 +88,7 @@ flatNumber.addEventListener('keyup', (e) => {
         e.target.value;
     }
 })
+
 //form validatioin end
 
 let completeOrder = document.querySelector('.complete-order');
@@ -130,6 +131,7 @@ closeOrderPopup.addEventListener("click", () => {
     DeliveryPopup.style.display="none";
     body.classList.remove('hidden');
     form.reset();
+    completeOrder.disabled = true;
 })
 
   street.addEventListener ('keyup', (e) => {
