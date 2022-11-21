@@ -519,6 +519,10 @@ footer{
     -webkit-appearance: none;
 }
 
+.input-common {
+    -moz-appearance: textfield;
+}
+
 .adress p {
     font-size: 20px;
 }
